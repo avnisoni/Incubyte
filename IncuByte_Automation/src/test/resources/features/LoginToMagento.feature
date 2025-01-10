@@ -14,7 +14,7 @@
       And User logs out from the application
       Examples:
         |FirstName  |LastName  |Email              |Password     |
-        |Avni       |Soni      |soni3@gmail.com    |Avnisoni@4   |
+        |Avni       |Soni      |soni10@gmail.com    |Avnisoni@4   |
 
     @scenario2
     Scenario Outline: Signin to Existing Mangento Account
@@ -26,7 +26,7 @@
       And User logs out from the application
       Examples:
         |Email              |Password     |
-        |soni2@gmail.com    |Avnisoni@4   |
+        |soni10@gmail.com    |Avnisoni@4   |
 
 
     @scenario3
@@ -34,7 +34,7 @@
       Given User creates a magento account
         |FirstName      |LastName     |Email      |Password     |
         |<FirstName>    |<LastName>   |<Email>    |<Password>   |
-      Then User verifies that account creation failure
+      Then User verifies account creation failure
       Examples:
         |FirstName  |LastName  |Email              |Password     |
-        |Avni       |Soni      |soni2@gmail.com    |Avnisoni@4   |
+        |Avni       |Soni      |soni10@gmail.com    |Avnisoni@4   |

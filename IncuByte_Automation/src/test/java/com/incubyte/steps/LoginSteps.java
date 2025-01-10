@@ -87,8 +87,8 @@ public class LoginSteps extends BaseClass{
         Assert.assertEquals(genericHelper.getText(loginPage.getAccountHeader_Text()),"My Account");
     }
 
-    @Then("User verifies that account creation failure")
-    public void userVerifiesThatAccountCreationFailure() throws Throwable {
+    @Then("User verifies account creation failure")
+    public void userVerifiesAccountCreationFailure() throws Throwable {
      String errorMesg = genericHelper.getText(loginPage.getErrorMesgForExistingAccount());
      if(!errorMesg.contains("There is already an account with this email address.")){
          Assert.fail("Error message not found or did not match the expected error message.");
